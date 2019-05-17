@@ -2,6 +2,10 @@ This is a python API wrapper for [https://github.com/mdmoore25404/gpc-je]
 
 # Quickstart
 
+
+You will need a running gpc-je. A quick one that listens on port `30000` can be stood up using `docker-compose` from the gpc-je root directory. More robust options (e.g. kubernetes) should be used when you're doing real work.
+
+
 For a quick example we will show creating jobs to calculate if a number is prime and then farmingthat work out. The full code is located under the `examples` directory of this project.
 
 
