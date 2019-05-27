@@ -8,9 +8,9 @@ import json
 jec = python_client.GpcJobEngineClient("http://localhost:30000/")
 
 #example jobs
-for i in range(1,101):
+for i in range(1,11):
     payload = {}
     payload['n'] = i
-    jec.addJob(json.dumps(payload), f"IsPrime {i}")
+    jec.addJob(json.dumps(payload), f"IsPrime {i}", jobFamily='primes')
 
 

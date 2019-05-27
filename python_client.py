@@ -27,14 +27,14 @@ class GpcJobEngineClient:
         if self.DEBUG == True:
             sys.stdout.write("%s\n" % s)
 
-    def addJob(self, payload, friendlyName = "", priority=1):
+    def addJob(self, payload, friendlyName = "", jobFamily = "", priority=1):
         """
         Add a job to queue
         
         :param payload: dict of job settings
         :param priority=1: int optional priority for job
         """        
-        return self.post("jobs", { 'payload': payload, "friendlyName" : friendlyName})
+        return self.post("jobs", { 'payload': payload, "friendlyName" : friendlyName, "jobFamily" : jobFamily})
 
     def get(self, m, params = {}):
         self.log("Request GET " + self.url + m + " with parameters " + str(params))
