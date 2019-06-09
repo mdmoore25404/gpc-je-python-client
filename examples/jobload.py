@@ -5,7 +5,7 @@ import python_client
 import json
 
 # define the API basepoint and a worker for worker example
-jec = python_client.GpcJobEngineClient("http://localhost:30000/")
+jec = python_client.GpcJobEngineClient("http://localhost:8007/")
 
 #example jobs
 for i in range(1,11):

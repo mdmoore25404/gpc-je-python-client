@@ -42,7 +42,7 @@ def myWorker(j,jec):
 
 def spawnme(workerid):
     ## define the API basepoint and a worker for worker example
-    jec = python_client.GpcJobEngineClient("http://localhost:30000/", userWorker= myWorker, terminateOnNoJobs= True, workerId=workerid)
+    jec = python_client.GpcJobEngineClient("http://localhost:8007/", userWorker= myWorker, terminateOnNoJobs= True, workerId=workerid)
     #### maybe you just want to call your function only if there's a job and not deal with that check/wait yourself:    
     jec.start()
 
