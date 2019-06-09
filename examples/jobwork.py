@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 import sys
 sys.path.append("../")
 import python_client
